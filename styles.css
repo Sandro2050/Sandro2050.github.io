@@ -1,0 +1,329 @@
+/* Tipografía y Colores */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #131414;
+    background-image: url('Imagenes/Niños\ colombiaa.webp'); /* Imagen de fondo */
+    background-size: cover; /* Abarcar toda la pantalla */
+    background-attachment: fixed; /* Efecto de desplazamiento */
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+}
+
+/* Transparencia del fondo */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(158, 158, 158, 0.321); /* Fondo semitransparente */
+    z-index: -1; /* Asegura que quede detrás del contenido */
+}
+
+header {
+    background-color: rgba(74, 145, 226, 0.842); /* Transparente con color */
+    color: rgba(255, 255, 255, 0.978);
+    text-align: center;
+    padding: 15px 0;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+header h2 {
+    font-size: 2.7rem;
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: rgba(255, 255, 255, 0.99);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.seccion {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a1b1c;
+}
+
+
+.seccion p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #060202;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contenedor img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+
+.btn-principal {
+    background-color: #4a91e2e9;
+    color: rgb(14, 13, 13);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #3579bde7;
+}
+
+.botones-recursos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-recurso {
+    background-color: #4a91e2e9;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-recurso:hover {
+    background-color: #FFAA00;
+}
+
+
+
+footer {
+    background-color: rgba(74, 145, 226, 0.842); /* Transparente con color */
+    color: white;
+    text-align: center;       
+    padding: 15px 10;         
+    position: fixed;          
+    width: 100%;              
+    bottom: 0;                
+    left: 0;                           
+    font-size: 0.9rem;         
+    box-sizing: border-box;   
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #228b22;
+}
+
+button {
+    background-color: #4682b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cuadro-texto {
+    border: 2px solid #4682b4; 
+    padding: 20px; 
+    background-color: #f0f8ff; 
+    border-radius: 20px; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.984); 
+    margin: 20px auto; 
+    max-width: 800px; 
+    font-family: 'Arial', sans-serif; 
+    text-align: justify;  
+    height: auto;
+}
+
+
+
+
+
+
+.mi-imagen {
+    width: 100%;   /* La imagen se ajustará al 100% del contenedor */
+    max-width: 550px; /* Limitar el tamaño máximo a 550px */
+    height: auto;  /* Mantener la proporción de la imagen */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .mi-imagen {
+        max-width: 100%; /* La imagen ocupará el 100% del ancho en dispositivos móviles */
+    }
+}
+
+/* Media query para pantallas de tabletas o más grandes */
+@media (max-width: 900px) {
+    .mi-imagen {
+        max-width: 450px;  /* Ajustar el tamaño máximo a 450px para pantallas medianas */
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .video-container {
+        width: 100%; /* Hace que el video ocupe todo el ancho disponible */
+        max-width: 480px; /* Tamaño máximo más pequeño para dispositivos móviles */
+        height: 300px; /* Ajusta la altura en pantallas pequeñas */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
